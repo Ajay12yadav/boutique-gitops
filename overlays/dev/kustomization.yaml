@@ -33,3 +33,11 @@ images:
   - name: cartservice
     newName: ghcr.io/ajay12yadav/cartservice
     newTag: "43413e9"
+
+patches:
+  - patch: |-
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: frontend-external
+      $patch: delete
