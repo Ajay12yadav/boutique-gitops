@@ -1,0 +1,35 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: frontend
+    newName: ghcr.io/ajay12yadav/frontend
+    newTag: "2328699"
+  - name: checkoutservice
+    newName: ghcr.io/ajay12yadav/checkoutservice
+    newTag: fdccb1d
+  - name: productcatalogservice
+    newName: ghcr.io/ajay12yadav/productcatalogservice
+    newTag: fdccb1d
+  - name: shippingservice
+    newName: ghcr.io/ajay12yadav/shippingservice
+    newTag: fdccb1d
+  - name: currencyservice
+    newName: ghcr.io/ajay12yadav/currencyservice
+    newTag: cab520a
+  - name: paymentservice
+    newName: ghcr.io/ajay12yadav/paymentservice
+    newTag: c2b22c5
+  - name: emailservice
+    newName: ghcr.io/ajay12yadav/emailservice
+    newTag: c2b22c5
+  - name: recommendationservice
+    newName: ghcr.io/ajay12yadav/recommendationservice
+    newTag: c2b22c5
+  - name: adservice
+    newName: ghcr.io/ajay12yadav/adservice
+    newTag: 7c1e084
+  - name: cartservice
+    newName: ghcr.io/ajay12yadav/cartservice
+    newTag: "43413e9"
