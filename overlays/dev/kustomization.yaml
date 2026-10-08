@@ -14,7 +14,7 @@ images:
     newTag: fdccb1d
   - name: shippingservice
     newName: ghcr.io/ajay12yadav/shippingservice
-    newTag: fdccb1d
+    newTag: "3313b9d"
   - name: currencyservice
     newName: ghcr.io/ajay12yadav/currencyservice
     newTag: cab520a
